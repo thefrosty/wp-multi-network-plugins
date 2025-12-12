@@ -1,0 +1,8 @@
+*.DS_store
+.DS_store?
+.idea
+node_modules
+vendor
+wordpress
+composer.lock
+package-lock.json
