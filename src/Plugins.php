@@ -249,34 +249,34 @@ class Plugins
         wp_register_script('wp-multi-network-plugins', '', args: ['in_footer' => true]); // phpcs:ignore
         wp_enqueue_script('wp-multi-network-plugins');
         $script = <<<'SCRIPT'
-            document.addEventListener( 'DOMContentLoaded', function() {
-              const sitesLists = document.querySelectorAll(`[id^="siteslist_"]`);
-              if (sitesLists) {
-                sitesLists.forEach(sitesList => {
-                  sitesList.style.display = 'none';
-                })
-              }
-            });
-            function toggleSiteList(plugin) {
-              const id = plugin.getAttribute('data-toggle-id');
-              if (!id) return;
-              const element = document.getElementById(id);
-              if (!element) return;
-              const child = plugin.firstElementChild;
-              if (child.classList.contains('dashicons-arrow-right')) {
-                child.classList.remove('dashicons-arrow-right');
-                child.classList.add('dashicons-arrow-down');
-              } else {
-                child.classList.remove('dashicons-arrow-down');
-                child.classList.add('dashicons-arrow-right');
-              }
-              if (element.style.display === 'none') {
-                element.style.display = 'block';
-              } else {
-                element.style.display = 'none';
-              }
-            }
-            SCRIPT;
+document.addEventListener( 'DOMContentLoaded', function() {
+  const sitesLists = document.querySelectorAll(`[id^="siteslist_"]`);
+  if (sitesLists) {
+    sitesLists.forEach(sitesList => {
+      sitesList.style.display = 'none';
+    })
+  }
+});
+function toggleSiteList(plugin) {
+  const id = plugin.getAttribute('data-toggle-id');
+  if (!id) return;
+  const element = document.getElementById(id);
+  if (!element) return;
+  const child = plugin.firstElementChild;
+  if (child.classList.contains('dashicons-arrow-right')) {
+    child.classList.remove('dashicons-arrow-right');
+    child.classList.add('dashicons-arrow-down');
+  } else {
+    child.classList.remove('dashicons-arrow-down');
+    child.classList.add('dashicons-arrow-right');
+  }
+  if (element.style.display === 'none') {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
+  }
+}
+SCRIPT;
         wp_add_inline_script('wp-multi-network-plugins', $script);
     }
 
