@@ -7,7 +7,7 @@ declare(strict_types=1);
  * @wordpress-muplugin
  * Plugin Name: WP Multi Network Plugins
  * Description: Plugin lists for global multisite networks.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Austin Passy
  * Author URI: https://github.com/thefrosty
  */
