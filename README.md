@@ -1,2 +1,3 @@
-# wp-multi-network-plugins
-Plugin lists for global multisite networks
+# WP Multi Network Plugins
+
+Plugin lists for global Multisite Networks
