@@ -25,6 +25,7 @@ use function get_blog_option;
 use function get_site_transient;
 use function get_sites;
 use function in_array;
+use function is_array;
 use function is_plugin_active_for_network;
 use function printf;
 use function sanitize_html_class;
@@ -309,7 +310,7 @@ SCRIPT;
      */
     protected function getSitesPlugins(bool $force = false): array
     {
-        if (!empty($this->blogs_plugins)) {
+        if (!is_array($this->blogs_plugins) || $this->blogs_plugins !== []) {
             return $this->blogs_plugins;
         }
 
