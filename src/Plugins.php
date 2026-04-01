@@ -82,7 +82,7 @@ class Plugins
      * Member variable to store data about active plugins for each blog.
      * @var array<int, array<string, mixed>> $blogs_plugins
      */
-    private array $blogs_plugins;
+    private array $blogs_plugins = [];
 
     /**
      * Plugins constructor.
