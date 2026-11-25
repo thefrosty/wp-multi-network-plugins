@@ -17,9 +17,9 @@
     "source": "https://github.com/thefrosty/wp-multi-network-plugins"
   },
   "require": {
-    "php": "~8.3",
+    "php": "^8.3",
     "composer/installers": "^2.0",
-    "symfony/http-foundation": "^7.3.4"
+    "symfony/http-foundation": "^7.3.4 || ^8.1.11",
   },
   "require-dev": {
     "phpcompatibility/phpcompatibility-wp": "^2.1.0",
