@@ -19,7 +19,7 @@
   "require": {
     "php": "^8.3",
     "composer/installers": "^2.0",
-    "symfony/http-foundation": "^7.3.4 || ^8.1.11",
+    "symfony/http-foundation": "^7.3.4 || ^8.1.11"
   },
   "require-dev": {
     "phpcompatibility/phpcompatibility-wp": "^2.1.0",
